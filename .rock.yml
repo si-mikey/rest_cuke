@@ -1,0 +1,5 @@
+runtime: ruby19
+
+test: |
+ 
+ exec cucumber ${ROCK_ARG1}
