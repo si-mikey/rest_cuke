@@ -9,4 +9,6 @@ Feature: Verify various HTTP method calls return correct data and status code
 
     Examples: 
     | http_call | http_route   | http_params | resp_status | resp_type                         | resp_body                  |
-    | GET       | /status      |  /          |  200        | 'application/json; charset=utf-8' | 'this is the 200 response' |
+    | GET       | /200         |  /          |  200        | 'application/json; charset=utf-8' | 'this is the 200 response' |
+    | GET       | /400         |  /          |  404        | 'application/json; charset=utf-8' | 'this is the 400 response' |
+    | GET       | /500         |  /          |  500        | 'application/json; charset=utf-8' | 'this is the 500 response' | 
